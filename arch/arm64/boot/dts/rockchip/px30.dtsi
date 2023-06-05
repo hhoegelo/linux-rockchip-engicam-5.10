@@ -895,7 +895,7 @@
 		reg-shift = <2>;
 		reg-io-width = <4>;
 		pinctrl-names = "default";
-		pinctrl-0 = <&uart2m0_xfer>;
+		pinctrl-0 = <&uart2m1_xfer>;
 		status = "disabled";
 	};
 
@@ -2784,7 +2784,9 @@
 					<1 RK_PC6 1 &pcfg_pull_up>,
 					<1 RK_PC7 1 &pcfg_pull_up>,
 					<1 RK_PD0 1 &pcfg_pull_up>,
-					<1 RK_PD1 1 &pcfg_pull_up>;
+					<1 RK_PD1 1 &pcfg_pull_up>,
+					<1 RK_PC4 1 &pcfg_pull_up>,
+					<1 RK_PC5 1 &pcfg_pull_up>;
 			};
 		};
 
