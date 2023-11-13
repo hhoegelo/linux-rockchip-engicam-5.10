@@ -2766,6 +2766,16 @@
 					<1 RK_PD4 1 &pcfg_pull_up_8ma>,
 					<1 RK_PD5 1 &pcfg_pull_up_8ma>;
 			};
+
+			sdmmc_gpio: sdmmc-gpio {
+				rockchip,pins =
+					<1 RK_PD2 RK_FUNC_GPIO &pcfg_pull_up_4ma>,
+					<1 RK_PD3 RK_FUNC_GPIO &pcfg_pull_up_4ma>,
+					<1 RK_PD4 RK_FUNC_GPIO &pcfg_pull_up_4ma>,
+					<1 RK_PD5 RK_FUNC_GPIO &pcfg_pull_up_4ma>,
+					<1 RK_PD6 RK_FUNC_GPIO &pcfg_pull_up_4ma>,
+					<1 RK_PD7 RK_FUNC_GPIO &pcfg_pull_up_4ma>;
+			};
 		};
 
 		sdio {
@@ -2788,6 +2798,16 @@
 					<1 RK_PC4 1 &pcfg_pull_up>,
 					<1 RK_PC5 1 &pcfg_pull_up>;
 			};
+
+			sdio_gpio: sdio-gpio {
+				rockchip,pins =
+					<1 RK_PC6 RK_FUNC_GPIO &pcfg_pull_up>,
+					<1 RK_PC7 RK_FUNC_GPIO &pcfg_pull_up>,
+					<1 RK_PD0 RK_FUNC_GPIO &pcfg_pull_up>,
+					<1 RK_PD1 RK_FUNC_GPIO &pcfg_pull_up>,
+					<1 RK_PC4 RK_FUNC_GPIO &pcfg_pull_up>,
+					<1 RK_PC5 RK_FUNC_GPIO &pcfg_pull_up>;
+			};
 		};
 
 		emmc {
@@ -2799,6 +2819,11 @@
 			emmc_cmd: emmc-cmd {
 				rockchip,pins =
 					<1 RK_PB2 2 &pcfg_pull_up_8ma>;
+			};
+
+			emmc_pwren: emmc-pwren {
+				rockchip,pins =
+					<1 RK_PB0 2 &pcfg_pull_none>;
 			};
 
 			emmc_rstnout: emmc-rstnout {
